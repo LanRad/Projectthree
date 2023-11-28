@@ -1,0 +1,44 @@
+Token: 
+
+To Stage Changes for Commits:
+git add {{name of file or doc you are updating}}
+	Example: git add R
+ 
+To Commit from Terminal:
+git commit 
+	Add header	
+	Add message
+	Esc and then :wq
+
+To Push Commits:
+git push -u origin main 
+	If it cannot authenticate try this command NOT in the terminal try:
+	credentials::set_github_pat(“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”)
+
+To Check that the Commit Worked:
+git log
+OR check out the github website
+
+To download a package: 
+devtools::install_github(“username/rpackage”)
+ 
+
+if((is.numeric({{col_dep}})) {
+Return_summary <- data >%>
+select (a=quo_name(col_dep),starts_with(col_indep)) >%>
+lm(a~data
+
+lm_function <- function(dataf,col_dep, col_indep){
+  dataf %>%
+  if(is.numeric({{col_dep}}))  {
+    return_summary <- dataf %>%
+      select(a = quo_name(col_dep), starts_with(col_indep)) %>%
+      lm(a ~ ., data = .) %>%
+      summary()
+    return(return_summary)
+  } else {
+    print("Response not numeric, not appropriate for LM")
+  }
+
+   }
+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

@@ -1,0 +1,17 @@
+---
+title: "ProjectThree"
+author: "Lane Radford"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(googlesheets4)
+googlesheets4::gs4_deauth()
+surveys <- read_sheet("https://docs.google.com/spreadsheets/d/1VlOw-lx0WSUFPmV2Q5vI69XbOL-1d-04K71k6sZ-nZQ/edit?usp=sharing")
+
+```

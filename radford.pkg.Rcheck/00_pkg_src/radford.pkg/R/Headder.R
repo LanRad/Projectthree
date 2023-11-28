@@ -1,1 +1,6 @@
-#this script will create a headder under the graph to see a sample of your data
+#this script will tell you how many columns you have
+colcount <- function(df) {
+  colnum <- length(names(df))
+  return(colnum)
+}
+#ask w, how to return with text

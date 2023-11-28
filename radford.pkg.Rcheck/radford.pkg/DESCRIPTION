@@ -1,0 +1,22 @@
+Package: radford.pkg
+Title: Removing NA values
+Version: 0.1
+Authors@R: c(
+  person(given = "Lane",
+    family = "Radford",
+    role = c("cre", "aut"),
+    email = "lydell.radford@selu.edu"))
+Description: 2-3 sentences
+License: MIT + file LICENSE
+Depends: R (>= 2.10), magrittr
+Imports: tidyverse, broom, dplyr
+RoxygenNote: 7.1.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+NeedsCompilation: no
+Packaged: 2023-11-18 01:47:17 UTC; r2159901
+Author: Lane Radford [cre, aut]
+Maintainer: Lane Radford <lydell.radford@selu.edu>
+Built: R 4.3.1; ; 2023-11-18 01:47:21 UTC; unix

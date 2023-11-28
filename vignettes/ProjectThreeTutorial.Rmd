@@ -1,5 +1,5 @@
 ---
-title: "ProjectThree"
+title: "Math-a-magical™"
 author: "Lane Radford"
 date: "`r Sys.Date()`"
 output: html_document
@@ -9,5 +9,21 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+```{r}
+library(googlesheets4)
+googlesheets4::gs4_deauth()
+surveys <- read_sheet("https://docs.google.com/spreadsheets/d/1VlOw-lx0WSUFPmV2Q5vI69XbOL-1d-04K71k6sZ-nZQ/edit?usp=sharing")
 
-uedahibduadguahdiasbudboasiubd
+```
+
+There are 5 functions in the Math-a-magical™
+
+1)lineproj - this script takes your data and plots it as a line graph
+
+2)nosmoking - this script will delete any numerical data equal to 420... lung cancer is serious
+
+3)linearmodel2 - This script will create a linear model of the data
+
+4)colcount- if you wanted to know how many columns you have if using there are too many for the header() function to work easily
+
+5)removena -  a simple script that Removes NA values from your data frame

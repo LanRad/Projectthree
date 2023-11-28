@@ -11,7 +11,8 @@
 #' @export
 
 
-lineproj <- function(df, xaxis, yaxis, colorg){
-  ggplot(data = df, mapping = 
-           aes(x= xaxis, y= yaxis, color = colorg)) + geom_line()
+lineproj <- function(df, xaxis, yaxis){
+  ggplot(data = {{df}}, mapping = 
+           aes(x= {{xaxis}}, y= {{yaxis}})) + geom_point(color="blue4")
 }
+#ask w why I cant change variables

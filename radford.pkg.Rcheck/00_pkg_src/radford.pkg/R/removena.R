@@ -5,9 +5,7 @@
 #' @param data The dataframe the user wishes to clear NA's of.
 #' @return Dataframe with no NAs (str)
 #' 
-#' 
 #' @export 
-
 
 removena <- function(data){
   clean <- data %>% 
@@ -15,6 +13,3 @@ removena <- function(data){
   return(clean)
   
 }
-
-
-head(removena(surveys))

@@ -8,14 +8,14 @@ Authors@R: c(
     email = "lydell.radford@selu.edu"))
 Description: 2-3 sentences
 License: MIT + file LICENSE
-Depends: R (>= 2.10)
-Imports: tidyverse, broom
+Depends: R (>= 2.10), magrittr
+Imports: tidyverse, broom, dplyr
 RoxygenNote: 7.1.1
 Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 NeedsCompilation: no
-Packaged: 2023-10-24 19:27:27 UTC; r2159901
+Packaged: 2023-11-18 01:47:17 UTC; r2159901
 Author: Lane Radford [cre, aut]
 Maintainer: Lane Radford <lydell.radford@selu.edu>
