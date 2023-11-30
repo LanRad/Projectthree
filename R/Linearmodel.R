@@ -5,8 +5,10 @@
 
 #linearmodelproj <- function(df){
 #  {{df}} + geom_smooth(method = "lm", color = "red", linewidth = 0.5, fill = "tomato")
-#}
-linearmodel2 <- function(df2,x,y){
-  linmol <- lm({{x}} ~ {{y}}, data= {{df2}})
-  summary(linmol)
+
+
+linearmodel2 <- function(xcoe, ycoe, df){
+
+  linmol <- lm({{xcoe}} ~ {{ycoe}}, data = df)
+  return(linmol)
 }

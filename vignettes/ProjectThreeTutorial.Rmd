@@ -9,6 +9,8 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
+Dataset: Data_portal_joined
 ```{r}
 library(googlesheets4)
 googlesheets4::gs4_deauth()
@@ -16,14 +18,61 @@ surveys <- read_sheet("https://docs.google.com/spreadsheets/d/1VlOw-lx0WSUFPmV2Q
 
 ```
 
-There are 5 functions in the Math-a-magical™
+---
+dependencies 
+tidyvers, broom, and dplyr
+---
 
-1)lineproj - this script takes your data and plots it as a line graph
 
-2)nosmoking - this script will delete any numerical data equal to 420... lung cancer is serious
+---
+Math Magical download
 
-3)linearmodel2 - This script will create a linear model of the data
+devtools::install(“LanRad/projectthree.pkg”)
+library(radford.pkg)
+---
 
-4)colcount- if you wanted to know how many columns you have if using there are too many for the header() function to work easily
 
-5)removena -  a simple script that Removes NA values from your data frame
+
+There are 5 functions in the Math-a-magical™ R Package!
+---
+
+
+lineprog()
+lineproj <- function(df, xaxis, yaxis)
+
+Ggplot line graphs are a really good tool for visualizing large amounts of data and quickly understanding complex ecosystems. They are particularly useful when you want to show trends over time, or when you want to quickly compare different sets of data.
+
+this script takes your data and plots it as a line graph, with the help og ggplot
+
+---
+nosmoking()
+nosmoking <- function(df)
+
+Smoking weed may be seen as a harmless recreational activity by ne'er-do-wells and sidewinders... but it has many negative consequences that shouldn’t be ignored. One of the most significant risks associated with smoking weed is lung cancer, an expensive and dangerous ailment you wouldn”t want to deal with.
+
+this script will delete any numerical data equal to 420... lung cancer is serious...
+
+---
+linearmodel2()
+linearmodel2 <- function(df2,x,y)
+
+Linear models are good for researchers who want to study the probability of a bunch of animals. Lms allow them to emulate the behavior of these animals using mathm-a-magical™, which can be used to predict future outcomes based on their past data.
+
+This script will create a linear model of the data
+
+---
+colcount()
+colcount <- function(df)
+
+Sometimes datasets are too large to be read easily, with this function you’ll be able to see how many columns you have. You may be temped to use the header function but if you have too many columns for it rendering it tedius.
+
+This script shows you how many columns you have if using there are too many for the header() function to work easily
+
+---
+removena()
+removena <- function(data)
+
+this is a simple function that removes NA values from your dataframe
+
+end
+ 
